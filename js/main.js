@@ -17,6 +17,15 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
+
+
+    // Date and time picker
+    $('.date').datetimepicker({
+        format: 'L'
+    });
+    $('.time').datetimepicker({
+        format: 'LT'
+    });
     
     
     // Back to top button
@@ -33,37 +42,62 @@
     });
 
 
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
+    // Price carousel
+    $(".price-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 45,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            },
+            992:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
     });
-    $('.time').datetimepicker({
-        format: 'LT'
+
+
+    // Team carousel
+    $(".team-carousel, .related-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 45,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            },
+            992:{
+                items:2
+            }
+        }
     });
 
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
-        margin: 30,
+        smartSpeed: 1000,
+        items: 1,
         dots: true,
         loop: true,
-        center: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
     });
     
 })(jQuery);

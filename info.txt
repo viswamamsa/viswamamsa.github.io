@@ -1,0 +1,6 @@
+_github-pages-challenge-viswamamsa
+7e48acb2ec6e6265d775399baa5b92
+
+1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-viswamamsa.urmilarajhospital.com
+2. Use this code for the value of the TXT record: 7e48acb2ec6e6265d775399baa5b92
+3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
